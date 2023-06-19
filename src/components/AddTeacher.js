@@ -18,9 +18,10 @@ function AddTeacher({ teacher, setTeacher }) {
       role: tteacherrole
     };
     const newArray = [...teacher];
-    if(params.id !== undefined)
-    {
-      newArray.splice(params.id,1,newTeacher)
+    if (params.id !== undefined) {
+      newArray[params.id] = newTeacher;
+    } else {
+      newArray.push(newTeacher);
     }
     setTeacher(newArray);
     navigate('/teacherdetails');

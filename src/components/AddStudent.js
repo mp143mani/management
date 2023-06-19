@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -21,10 +20,11 @@ function AddStudent({ student, setStudent }) {
       studentmobileno: smobileno
     };
     const newArray = [...student];
-if(params.id !== undefined)
-{
-  newArray.splice(params.id,1,newStudent)
-}
+    if (params.id !== undefined) {
+      newArray[params.id] = newStudent;
+    } else {
+      newArray.push(newStudent);
+    }
     setStudent(newArray);
     navigate('/studentdetails');
   };
