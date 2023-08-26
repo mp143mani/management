@@ -40,11 +40,11 @@ function AddStudent({ student, setStudent }) {
 
   return (
     <>
-      <div>
-        <h3>Add Students Details</h3>
-      </div>
-      <Container className="d-flex justify-content-center align-items-center">
-        <Form>
+
+    
+      
+      <Container className="d-flex justify-content-center align-items-center ">
+        <Form  style={{width:"100%"}}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Name</Form.Label>
             <Form.Control
@@ -89,6 +89,8 @@ function AddStudent({ student, setStudent }) {
           </Button>
         </Form>
       </Container>
+
+      
     </>
   );
 }

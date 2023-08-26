@@ -37,7 +37,7 @@ function AddTeacher({ teacher, setTeacher }) {
 
   return (
     <Container className="d-flex justify-content-center align-items-center vh-100">
-      <Form>
+      <Form style={{width:"100%"}}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Name</Form.Label>
           <Form.Control
